@@ -16,11 +16,11 @@ namespace CalculadoraWeb
             return a + b;
         }
 
-        // Integrante 2
-        // public static double Subtracao(double a, double b)
-        // {
-        //     // Implementar aqui
-        // }
+        
+        public static double Subtracao(double a, double b)
+        {
+            return a - b;
+        }
 
         
        public static double Multiplicacao(double a, double b)
