@@ -13,7 +13,7 @@ namespace CalculadoraWeb
         // Integrante 1
         public static double Adicao(double a, double b)
         {
-            return a + b;//oi
+            return a + b;
         }
 
         // Integrante 2
@@ -28,11 +28,11 @@ namespace CalculadoraWeb
         //     // Implementar aqui
         // }
 
-        // Integrante 4
-        // public static double Divisao(double a, double b)
-        // {
-        //     // Implementar aqui
-        // }
+        
+        public static double Divisao(double a, double b)
+        {
+            return a / b;
+        }
 
 
   // Integrante 5
