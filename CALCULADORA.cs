@@ -35,10 +35,10 @@ namespace CalculadoraWeb
         }
 
 
-  // Integrante 5
-        // public static double Potenciacao(double a, double b)
-        // {
-        //     // Implementar aqui
-        // }
+ 
+        public static double Potenciacao(double a, double b)
+        {
+            return Mach.Pow(a, b);
+        }
     }
 }
