@@ -25,7 +25,7 @@ namespace CalculadoraWeb
         
        public static double Multiplicacao(double a, double b)
         {
-       return a * b;
+           return a * b;
         }
 
         
