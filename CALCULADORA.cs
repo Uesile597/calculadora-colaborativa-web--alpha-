@@ -16,48 +16,42 @@ namespace CalculadoraWeb
             Console.WriteLine("4 - Divisão.");
             Console.WriteLine("5 - Potenciação.");
             int opcao = int.Parse(Console.ReadLine());
+            
+            Console.WriteLine("Escreva o primeiro número:");
+            double a = double.Parse(Console.ReadLine());
+            Console.WriteLine("Escreva o segundo número:");
+            double b = double.Parse(Console.ReadLine());
 
-            if (opcao == 1)
-            {
-                Console.WriteLine("Escreva o primeiro número");
-                double a = double.Parse(Console.ReadLine());
-                Console.WriteLine("Escreva o segundo número");
-                double b = double.Parse(Console.ReadLine());
-                Adicao();
-            }
-            else if(opcao == 2)
+            double resultado = 0;
+
+        if (opcao == 1)
+             {
+                resultado = Adicao(a, b);
+             }
+        else if(opcao == 2)
               {
-                Console.WriteLine("Escreva o primeiro número");
-                double a = double.Parse(Console.ReadLine());
-                Console.WriteLine("Escreva o segundo número");
-                double b = double.Parse(Console.ReadLine());
-                Subtracao();
-            }
-                else if(opcao == 3)
+                resultado = Subtracao(a, b);
+              }
+        else if(opcao == 3)
               {
-                Console.WriteLine("Escreva o primeiro número");
-                double a = double.Parse(Console.ReadLine());
-                Console.WriteLine("Escreva o segundo número");
-                double b = double.Parse(Console.ReadLine());
-                Multiplicacao();
-            }
-                else if(opcao == 4)
+                resultado = Multiplicacao(a, b);
+              }
+            
+        else if(opcao == 4)
               {
-                Console.WriteLine("Escreva o primeiro número");
-                double a = double.Parse(Console.ReadLine());
-                Console.WriteLine("Escreva o segundo número");
-                double b = double.Parse(Console.ReadLine());
-                Divisao();
-            }
-                else if(opcao == 5);
+                
+                resultado = Divisao(a, b);
+              }
+            
+        else if(opcao == 5)
               {
-                Console.WriteLine("Escreva o primeiro número");
-                double a = double.Parse(Console.ReadLine());
-                Console.WriteLine("Escreva o segundo número");
-                double b = double.Parse(Console.ReadLine());
-                Potenciacao();
-            }
+
+                resultado = Potenciacao(a, b);
+              }
+            Console.WriteLine($"Resultado: {resultado}");
         }
+
+        
 
         
 
