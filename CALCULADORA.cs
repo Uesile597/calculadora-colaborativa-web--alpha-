@@ -14,7 +14,8 @@ namespace CalculadoraWeb
             Console.WriteLine("2 - Subtração.");
             Console.WriteLine("3 - Multiplicação.");
             Console.WriteLine("4 - Divisão.");
-            Console.WriteLine("5 - Potenciação.");
+            Console.WriteLine("5 - Radiciação.");
+            Console.WriteLine("6 - Limpar");
             int opcao = int.Parse(Console.ReadLine());
             
             Console.WriteLine("Escreva o primeiro número:");
@@ -46,12 +47,16 @@ namespace CalculadoraWeb
         else if(opcao == 5)
               {
 
-                resultado = Potenciacao(a, b);
+                resultado = Radiciacao(a);
               }
             Console.WriteLine($"Resultado: {resultado}");
+         else if(opcao == 6)
+         {
+             Console.Clear();
+         }
         }
 
-        
+     
 
         
 
@@ -80,9 +85,10 @@ namespace CalculadoraWeb
 
 
  
-        public static double Potenciacao(double a, double b)
+        public static double Radiciacao(double a)
         {
-            return Math.Pow(a, b);
+           return Math.Sqrt(a);
         }
+        
     }
 }
